@@ -1,0 +1,261 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-ink:                #18181b;
+  --color-ink-soft:           #52525b;
+  --color-ink-muted:          #71717a;
+  --color-surface:            #f9f9f9;
+  --color-border:             #e4e4e7;
+  --color-paper:              #ffffff;
+  --color-tag-bg:             #f4f4f5;
+  --color-card-bg:            #f9f9f9;
+  --color-btn-primary-bg:     #18181b;
+  --color-btn-primary-text:   #ffffff;
+  --color-btn-outline-border: #e4e4e7;
+  --color-btn-outline-text:   #18181b;
+  --color-accent:             #00b4a0;
+  --color-accent-light:       #e6f9f6;
+  --color-accent-mid:         #b2ece5;
+  --color-grad-start:         #0077b6;
+  --color-grad-end:           #00e676;
+}
+
+/* ────────────────────────────────────────────────────────
+   DOCUSAURUS GLOBAL DARK TOKENS
+   These override Docusaurus's own variables so the nav,
+   footer, and doc pages all get the dark treatment too.
+──────────────────────────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-background-color:         #0f0f11;
+  --ifm-background-surface-color: #18181b;
+  --ifm-color-primary:            #00c9b0;
+  --ifm-color-primary-dark:       #00b4a0;
+  --ifm-navbar-background-color:  rgba(15, 15, 17, 0.92);
+  --ifm-footer-background-color:  #0f0f11;
+  --ifm-color-content:            #e4e4e7;
+  --ifm-color-content-secondary:  #a1a1aa;
+  --ifm-hr-border-color:          #27272a;
+  --ifm-toc-border-color:         #27272a;
+  --ifm-code-background:          #27272a;
+
+  /* page-level custom tokens used in preview.module.css */
+  --border:  #27272a;
+  --surface: #18181b;
+
+  /* custom semantic tokens — these override :root values */
+  --color-ink:                #f4f4f5;
+  --color-ink-soft:           #a1a1aa;
+  --color-ink-muted:          #71717a;
+  --color-surface:            #18181b;
+  --color-border:             #27272a;
+  --color-paper:              #0f0f11;
+  --color-tag-bg:             #27272a;
+  --color-card-bg:            #18181b;
+  --color-btn-primary-bg:     #00c9b0;
+  --color-btn-primary-text:   #0f0f11;
+  --color-btn-outline-border: #3f3f46;
+  --color-btn-outline-text:   #e4e4e7;
+  --color-accent:             #00c9b0;
+  --color-accent-light:       #0d2e28;
+  --color-accent-mid:         #1a4a3e;
+}
+
+/* ────────────────────────────────────────────────────────
+   HERO
+──────────────────────────────────────────────────────── */
+
+/* background & border */
+[data-theme='dark'] .hero {
+  background: #0f0f11;
+  border-bottom-color: #27272a;
+}
+
+/* right-side tint panel */
+[data-theme='dark'] .hero::before {
+  background: #18181b;
+  border-left-color: #27272a;
+}
+
+/* "Technical Writer" label */
+[data-theme='dark'] .heroRole {
+  color: #a1a1aa;
+}
+
+/* main heading */
+[data-theme='dark'] .heroH1 {
+  color: #f4f4f5;
+}
+
+/* subheading paragraph */
+[data-theme='dark'] .heroDesc {
+  color: #a1a1aa;
+}
+
+/* placeholder copy note */
+[data-theme='dark'] .heroCopyNote {
+  background: #0d2e28;
+  border-color: #1a4a3e;
+  color: #00c9b0;
+}
+
+/* primary CTA button — flips to teal on dark */
+[data-theme='dark'] .btnDark {
+  background: #00c9b0;
+  color: #0f0f11;
+}
+
+[data-theme='dark'] .btnDark:hover {
+  background: #00b4a0;
+  color: #0f0f11;
+  opacity: 1;
+}
+
+/* secondary outline button */
+[data-theme='dark'] .btnOutline {
+  border-color: #3f3f46;
+  color: #e4e4e7;
+}
+
+[data-theme='dark'] .btnOutline:hover {
+  border-color: #a1a1aa;
+  color: #f4f4f5;
+}
+
+/* ────────────────────────────────────────────────────────
+   AVATAR
+──────────────────────────────────────────────────────── */
+
+/* avatar background circle — slightly lighter than page bg */
+[data-theme='dark'] .avatarInner {
+  background: #27272a;
+}
+
+/* ────────────────────────────────────────────────────────
+   ABOUT SECTION
+──────────────────────────────────────────────────────── */
+[data-theme='dark'] .aboutSection {
+  background: #0f0f11;
+  border-bottom-color: #27272a;
+}
+
+/* section label text */
+[data-theme='dark'] .sectionLabel {
+  color: #71717a;
+}
+
+/* heading */
+[data-theme='dark'] .aboutH2 {
+  color: #f4f4f5;
+}
+
+/* body paragraphs */
+[data-theme='dark'] .aboutP {
+  color: #a1a1aa;
+}
+
+/* "Read more about me" link */
+[data-theme='dark'] .textLink {
+  color: #e4e4e7;
+  border-bottom-color: #3f3f46;
+}
+
+[data-theme='dark'] .textLink:hover {
+  color: #00c9b0;
+  border-bottom-color: #00c9b0;
+}
+
+/* ── content type cards ── */
+[data-theme='dark'] .contentType {
+  background: #18181b;
+  border-color: #27272a;
+}
+
+[data-theme='dark'] .contentType:hover {
+  border-color: #00b4a0;
+}
+
+[data-theme='dark'] .ctText {
+  color: #e4e4e7;
+}
+
+[data-theme='dark'] .ctSub {
+  color: #71717a;
+}
+
+/* ── filter tag links ── */
+[data-theme='dark'] .tagLink {
+  background: #27272a;
+  color: #a1a1aa;
+  border-color: transparent;
+}
+
+[data-theme='dark'] .tagLink:hover {
+  background: #00c9b0;
+  color: #0f0f11;
+  border-color: #00c9b0;
+}
+
+/* ────────────────────────────────────────────────────────
+   WORK SECTION
+   Already dark in light mode (#111113) — we deepen it
+   slightly and adjust border/text tones for consistency.
+──────────────────────────────────────────────────────── */
+[data-theme='dark'] .workSection {
+  background: #09090b;
+}
+
+[data-theme='dark'] .workLabel {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme='dark'] .workH2 {
+  color: #f4f4f5;
+}
+
+[data-theme='dark'] .workComing {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* skeleton placeholder cards */
+[data-theme='dark'] .phCard {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme='dark'] .phTag {
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] .phLine {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] .phLineThin {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme='dark'] .phFooter {
+  border-top-color: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.15);
+}
+.navbar-say-hello {
+  border: 1.5px solid #e4e4e7;
+  border-radius: 8px;
+  padding: 6px 16px !important;
+  font-weight: 600;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.navbar-say-hello:hover {
+  border-color: #00b4a0 !important;
+  color: #00b4a0 !important;
+  background: #e6f9f6;
+}

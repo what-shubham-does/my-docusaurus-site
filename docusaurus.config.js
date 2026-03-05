@@ -83,26 +83,50 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Home',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
+  title: 'Shubham',
+  hideOnScroll: false,
+  logo: {
+    alt: 'Shubham Sharma',
+    src: 'img/logo.svg',
+  },
+  items: [
+    // ── Left side links ──────────────────────────────
+    {
+      to: '/preview',       // points to your preview.js page for now
+      label: 'Home',
+      position: 'left',
+    },
+    {
+      to: '/about',
+      label: 'About',
+      position: 'left',
+    },
+    {
+      to: '/work',
+      label: 'Work',
+      position: 'left',
+    },
+    {
+      to: '/cv',
+      label: 'CV',
+      position: 'left',
+    },
+
+    // ── Right side links ─────────────────────────────
+    {
+      href: 'https://www.linkedin.com/in/your-profile',  // replace with your LinkedIn URL
+      label: 'LinkedIn',
+      position: 'right',
+    },
+    {
+      to: '/contact',
+      label: 'Say hello',
+      position: 'right',
+      className: 'navbar-say-hello',   // lets you style it as a button in custom.css
+    },
+  ],
+},
+
       footer: {
         style: 'dark',
         links: [
